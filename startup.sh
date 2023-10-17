@@ -1,1 +1,1 @@
-uvicorn app:app --host 0.0.0.0 --port 8000
+gunicorn --bind=0.0.0.0 --workers=4 startup:app
